@@ -5,11 +5,26 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
-  color: #010000;
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
+}
+
+
+//scrollbar 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1356d;
+  border-radius: 5px;
+  
 }
 
 /*navbar*/
@@ -41,24 +56,28 @@ html {
     display: none;
   }
   .navbar .menu a {
-    color: #010000 !important;
-    text-align: right;
-    background-color: #ffffff !important;
+    color: white !important;
+    font-size: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  
   }
   .navbar .menu a:hover{
-    color: #f1356d !important;
+    color: white !important;
   }
 
  .navbar .dropDown {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 120px;
+  position: fixed;
+  width: 100vw;
+  height: 80vh;
   top: 62px;
-  right: 0px;
-  background-color:white;
+  align-items: center;
+  background-color: #f1356d;
   z-index: 2;
-  transition: all 3s linear;
+  transition-timing-function: ease-in-out;
+  transition: height 5s linear;
  }
 }
 .navbar a {
@@ -134,7 +153,8 @@ button {
 .about-section .big-text {
   font-size: 30px ;
   text-align: center; 
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .about-section .about {
@@ -155,8 +175,19 @@ button {
   padding: 30px;
   width: 500px;
   line-height: 1.6;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
+.about-section .details i {
+  margin-right: 10px
+}
+
+@media only screen and (max-width:600px) {
+  .about-section .pic {
+    width: 40%;
+  }
+}
 /* .about-section {
   box-sizing: border-box;
   justify-content: space-between;
@@ -171,7 +202,6 @@ button {
   margin-bottom: 20px;
   text-align: center;
 }
-
 .about-section img {
   width: 25%;
   height: 450px;
@@ -180,15 +210,12 @@ button {
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-
 .about-section .details p {
   width: 75%;
   text-align: left;
   padding: 65px;
 }
-
 @media only screen and (max-width:768px) {
   .about-section {
     display: block;
@@ -200,7 +227,6 @@ button {
     display: block;
     margin-left: 10px;
     align-items: center;
-
   }
   .about-section img {
     box-sizing: border-box;
@@ -255,10 +281,12 @@ button {
 }
 .footer a {
   text-decoration: none;
+  color: black; 
 }
 .footer .last {
   margin: 20px;
 }
+
 @media only screen and (max-width:768px) {
   .footer h1{
     font-size: 25px ;

@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 const Skills = () => {
     return ( 
         <div>
-             <IconContext.Provider value={{size: "30px" ,gap: "30px", color: 'blue'}}>
+             <IconContext.Provider value={{size: "30px" ,gap: "30px", color: "#f1356d" }}>
                 <div className="logo">
                     <h2> Skills</h2>
                     <span className="icons">

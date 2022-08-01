@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import NavItems from "./Nav-Items";
+
+
 
 
 const NavBar = () => {

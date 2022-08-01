@@ -11,12 +11,12 @@ const Contact = () => {
             <a href={`mailto: abiodunpeace8@gmail.com`} >sayhello@peaceabiodun.com</a>
 
             <IconContext.Provider value={{size: "20px"}}>
-              <div className="socials" style={{marginTop: "6px" }}>
-                  <a href="https://github.com/peaceabiodun"><FaGithub /></a>
-                  <a href="https://www.linkedin.com/in/peaceabiodun"><FaLinkedin /></a>
-                  <a href="discordapp.com/users/885180995945517066"><FaDiscord /></a>
-                  <a href="https://twitter.com/_fine_peace_"><FaTwitter /></a>
-                  <a href="{`mailto: abiodunpeace8@gmail.com`}"><MdEmail /></a>
+              <div className="socials" style={{marginTop: "6px", gap: "6px"}}>
+                  <a href="https://github.com/peaceabiodun"><FaGithub size={30} /></a>
+                  <a href="https://www.linkedin.com/in/peaceabiodun"><FaLinkedin size={30} /></a>
+                  <a href="discordapp.com/users/885180995945517066"><FaDiscord size={30} /></a>
+                  <a href="https://twitter.com/_fine_peace_"><FaTwitter size={30} /></a>
+                  <a href="{`mailto: abiodunpeace8@gmail.com`}"><MdEmail size={30} /></a>
 
               </div>
             </IconContext.Provider>
