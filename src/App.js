@@ -1,4 +1,4 @@
-import MainPage from "./mainPage";
+import MainPage from "./components/mainPage";
 
 
 
