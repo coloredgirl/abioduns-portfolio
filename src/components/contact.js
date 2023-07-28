@@ -1,30 +1,55 @@
 import {FaGithub, FaLinkedin, FaDiscord, FaTwitter} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
-import { IconContext } from "react-icons";
+
 
 
 const Contact = () => {
     return ( 
-        <div className="footer" id="contact" >
-            <h1> Contact me </h1>
-            <h2> ...Lets code the world together...</h2>
-            <a href={`mailto: abiodunpeace8@gmail.com`} >sayhello@peaceabiodun.com</a>
-
-            <IconContext.Provider value={{size: "20px"}}>
-              <div className="socials" style={{marginTop: "6px", gap: "6px"}}>
-                  <a href="https://github.com/peaceabiodun"><FaGithub size={30} /></a>
-                  <a href="https://www.linkedin.com/in/peaceabiodun"><FaLinkedin size={30} /></a>
-                  <a href="discordapp.com/users/885180995945517066"><FaDiscord size={30} /></a>
-                  <a href="https://twitter.com/_fine_peace_"><FaTwitter size={30} /></a>
-                  <a href="{`mailto: abiodunpeace8@gmail.com`}"><MdEmail size={30} /></a>
-
+        <div id="contact" >
+          <div className="p-10 border-t flex gap-10">
+            <div className="flex flex-col w-full ">
+              <h2 className="font-bold text-lg">Let’s work together</h2>
+              <p className="text-sm max-w-[300px] my-4">You can reach out to me on any of the platforms below or just send me a message here </p>
+              <div className="flex gap-4 my-2">
+                <a href="mailto:abiodunpeace8@gmail.com"><MdEmail size={20} className='cursor-pointer' /></a>
+                <a href="https://www.linkedin.com/in/peaceabiodun/"><FaLinkedin size={20} className='cursor-pointer'/></a>
+                <a href="https://twitter.com/_fine_peace_"><FaTwitter size={20} className='cursor-pointer'/></a>
+                <a href="https://github.com/peaceabiodun"><FaGithub size={20} className='cursor-pointer'/></a>
               </div>
-            </IconContext.Provider>
-                <span className="last"> 
-                  Made With <i>❤</i> by{" "}
-                    <a href="https://github.com/peaceabiodun">Peace Abiodun</a>
-                </span>
+            </div>
 
+            <div className="w-full" >
+              <form className="flex flex-col gap-4 text-sm">
+                <input 
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className="bg-[#F3F3F3] text-[#2D2D2D] w-[300px] h-[35px] p-2 outline-none"
+                />
+
+                <input 
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className="bg-[#F3F3F3] w-[300px] h-[35px] p-2 outline-none"
+                />
+
+                <textarea 
+                  name="text"
+                  placeholder="Type your message here"
+                  className="bg-[#F3F3F3] w-[300px] h-[150px] p-2 outline-none"
+                />
+
+                <button className="bg-[#2D2D2D] text-white w-[300px] h-[35px] tetx-sm">
+                  Submit
+                </button>
+              </form>
+            </div>
+
+          </div>
+          <div>
+            <p className="p-2 text-[10px] text-center">© 2023 peace abiodun </p>
+          </div>
         </div>
      );
 }

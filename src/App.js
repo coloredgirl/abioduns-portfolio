@@ -1,11 +1,19 @@
+import About from "./components/About";
+import NavBar from "./components/NavBar";
+import Contact from "./components/contact";
 import MainPage from "./components/mainPage";
+import Work from "./components/work";
 
 
 
 function App() {
   return (
-    <div className=' block py-0 px-[10%] md:px-[20%] h-[100vh] top-0 bottom-0 left-0 right-0 fixed'>
+    <div className=' '>
+      <NavBar />
       <MainPage />
+      <About />
+      <Work />
+      <Contact />
     </div>
   );
 }
