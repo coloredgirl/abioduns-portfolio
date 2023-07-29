@@ -2,7 +2,7 @@ import Pic1 from '../image/pic1.JPG';
 
 const About = () => {
     return ( 
-        <div className='p-10 bg-[#e0e0e0]'>
+        <div className='p-10 '>
                 <h1 className='text-lg font-bold text-center mb-3'>About Me</h1>
                 <div className='flex flex-col sm:flex-row w-full sm:items-center sm:justify-center gap-10'>
                     <div className='text-xs'>

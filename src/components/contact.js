@@ -5,9 +5,9 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
     return ( 
-        <div id="contact" >
-          <div className="p-10 border-t flex gap-10">
-            <div className="flex flex-col w-full ">
+        <div id="contact " >
+          <div className=" mx-10 py-10 border-t flex flex-col sm:flex-row gap-10">
+            <div className="flex flex-col w-full  ">
               <h2 className="font-bold text-lg">Let’s work together</h2>
               <p className="text-sm max-w-[300px] my-4">You can reach out to me on any of the platforms below or just send me a message here </p>
               <div className="flex gap-4 my-2">
@@ -47,8 +47,8 @@ const Contact = () => {
             </div>
 
           </div>
-          <div>
-            <p className="p-2 text-[10px] text-center">© 2023 peace abiodun </p>
+          <div className="border-t">
+            <p className="p-2 text-[12px] text-center">© 2023 peace abiodun </p>
           </div>
         </div>
      );
